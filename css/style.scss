@@ -613,6 +613,11 @@ img {
           box-shadow: 0px 4.5px 5.5px 0px rgba(0, 0, 0, 0.11);
           text-align: center;
           border-radius: 24px;
+          &:first-child, &:nth-child(2) {
+            .wrap-content {
+              padding: 24px 24px 25px 24px;
+            }
+          }
           &:last-child {
             .wrap-content {
               .price {

@@ -516,6 +516,8 @@ img {
           box-shadow: 0px 4.5px 5.5px 0px rgba(0, 0, 0, 0.11);
           text-align: center;
           border-radius: 24px; }
+          .wrap-page .price-package-inner .wrap-package .package:first-child .wrap-content, .wrap-page .price-package-inner .wrap-package .package:nth-child(2) .wrap-content {
+            padding: 24px 24px 25px 24px; }
           .wrap-page .price-package-inner .wrap-package .package:last-child .wrap-content .price {
             margin-bottom: 0; }
           .wrap-page .price-package-inner .wrap-package .package:last-child .wrap-content .sub-desc {
