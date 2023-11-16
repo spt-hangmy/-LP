@@ -497,7 +497,7 @@ img {
     background-size: cover;
     background-repeat: repeat; }
     .wrap-page .price-package-inner {
-      padding: 100px 0;
+      padding: 100px 0 98px;
       text-align: center; }
       .wrap-page .price-package-inner h2 {
         padding-bottom: 22px;
@@ -511,11 +511,11 @@ img {
         gap: 25px; }
         .wrap-page .price-package-inner .wrap-package .package {
           width: calc(100% / 3);
-          border-radius: 24px;
           border: 3px solid #3fb6e7;
           background-color: #3fb6e7;
           box-shadow: 0px 4.5px 5.5px 0px rgba(0, 0, 0, 0.11);
-          text-align: center; }
+          text-align: center;
+          border-radius: 24px; }
           .wrap-page .price-package-inner .wrap-package .package:last-child .wrap-content .price {
             margin-bottom: 0; }
           .wrap-page .price-package-inner .wrap-package .package:last-child .wrap-content .sub-desc {
@@ -559,5 +559,55 @@ img {
               color: var(--dark);
               font-size: 14px;
               line-height: 1.35; }
+  .wrap-page .terms {
+    text-align: center; }
+    .wrap-page .terms-inner {
+      padding-bottom: 131px; }
+      .wrap-page .terms-inner h2 {
+        background-color: var(--foundation-blue-normal);
+        padding: 30px 0;
+        color: #fff;
+        text-align: center;
+        font-size: 40px;
+        font-weight: 700;
+        line-height: 1.4;
+        display: block;
+        background-image: none;
+        position: relative;
+        margin-bottom: 74px; }
+        .wrap-page .terms-inner h2::after {
+          content: "";
+          width: 60px;
+          height: 26px;
+          background: url("../image/landing/Polygon-3.png") no-repeat;
+          position: absolute;
+          bottom: -26px;
+          left: 50%;
+          transform: translateX(-50%);
+          display: block;
+          background-size: contain;
+          z-index: 1; }
+      .wrap-page .terms-inner .terms-content {
+        display: flex;
+        justify-content: space-between;
+        gap: 29px; }
+        .wrap-page .terms-inner .terms-content .wrap-img {
+          width: 317px; }
+        .wrap-page .terms-inner .terms-content .content {
+          width: calc(100% - 317px - 29px);
+          text-align: left; }
+          .wrap-page .terms-inner .terms-content .content .list-term {
+            margin-bottom: 30px; }
+            .wrap-page .terms-inner .terms-content .content .list-term p {
+              color: var(--dark);
+              font-size: 20px;
+              font-weight: 700;
+              line-height: 1.4;
+              margin-bottom: 17px; }
+          .wrap-page .terms-inner .terms-content .content .desc p {
+            color: var(--dark);
+            font-size: 14px;
+            line-height: 1.4;
+            margin-bottom: 6px; }
 
 /*# sourceMappingURL=style.css.map */
