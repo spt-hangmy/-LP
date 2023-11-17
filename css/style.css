@@ -3,6 +3,7 @@
   --foundation-orange-normal: #ff8c4b;
   --dark: #2f2e57;
   --foundation-blue-light-hover: #d9ebf2;
+  --foundation-blue-normal-hover: #016c98;
   font-size: 16px; }
 
 html,
@@ -296,7 +297,7 @@ img {
             gap: 20px;
             color: var(--dark); }
             .wrap-page .inheritances .inheritances-inner .wrap-content .wrap-rental-price .rental-price > p {
-              color: #ff8c4b;
+              color: var(--foundation-orange-normal);
               font-size: 97px;
               font-weight: 900;
               line-height: 1;
@@ -353,7 +354,7 @@ img {
             color: var(--dark);
             font-weight: 400; }
       .wrap-page .issue .wrap-issue .group-issue .issue-2 {
-        padding: 21px 60px;
+        padding: 22px 60px 20px;
         background-image: url("../image/landing/bg-issue-2.png"); }
     .wrap-page .issue .wrap-issue .big-issue {
       text-align: center;
@@ -399,11 +400,11 @@ img {
     .wrap-page .issue .solution-head {
       background-color: var(--foundation-blue-normal);
       position: relative;
-      top: -10px;
+      top: -9px;
       margin-bottom: 0; }
       .wrap-page .issue .solution-head-inner {
         text-align: center;
-        padding: 56px 0 49px 0;
+        padding: 57px 0 50px 0;
         position: relative; }
         .wrap-page .issue .solution-head-inner::after {
           content: "";
@@ -411,7 +412,7 @@ img {
           height: 26px;
           background: url("../image/landing/Polygon-3.png") no-repeat;
           position: absolute;
-          bottom: -26px;
+          bottom: -25px;
           left: 50%;
           transform: translateX(-50%);
           display: block;
@@ -479,16 +480,16 @@ img {
                 font-weight: 700; }
   .wrap-page h2 {
     padding-bottom: 50px;
-    background: url("../image/landing/brackets.png") no-repeat bottom left 5px;
+    background: url("../image/icon/brackets.svg") no-repeat bottom left 5px;
     background-size: 95%;
     display: inline-block;
-    margin-bottom: 50px;
+    margin-bottom: 48px;
     color: var(--dark);
     font-size: 40px;
     font-weight: 700;
     line-height: 0.85; }
   .wrap-page .inheritance-diagram-inner {
-    padding: 100px 0;
+    padding: 100px 0 101px;
     text-align: center; }
     .wrap-page .inheritance-diagram-inner .wrap-diagram {
       line-height: 0; }
@@ -501,7 +502,7 @@ img {
       text-align: center; }
       .wrap-page .price-package-inner h2 {
         padding-bottom: 22px;
-        background: url("../image/landing/brackets-2.png") no-repeat bottom left;
+        background: url("../image/icon/brackets.svg") no-repeat bottom left;
         background-size: contain;
         line-height: 1.35;
         margin-bottom: 45px; }
@@ -535,7 +536,7 @@ img {
             position: relative; }
             .wrap-page .price-package-inner .wrap-package .package .wrap-content img {
               position: absolute;
-              right: 5px;
+              right: 6px;
               width: 90px;
               height: auto;
               top: -45px; }
@@ -611,5 +612,234 @@ img {
             font-size: 14px;
             line-height: 1.4;
             margin-bottom: 6px; }
+    .wrap-page .terms .line {
+      background: #ffe9d7;
+      height: 20px;
+      display: block; }
+  .wrap-page .innovative {
+    background-color: #f0f7fa; }
+    .wrap-page .innovative-inner {
+      padding: 79px 55px 100px 54px;
+      text-align: center; }
+      .wrap-page .innovative-inner h2 {
+        line-height: 1.4;
+        padding-bottom: 33px;
+        background: url(../image/icon/brackets.svg) no-repeat bottom left 24px; }
+      .wrap-page .innovative-inner .wrap-content .wrap-img-desc {
+        position: relative;
+        display: inline-block;
+        margin-bottom: 16px; }
+        .wrap-page .innovative-inner .wrap-content .wrap-img-desc img {
+          width: 386px;
+          height: auto; }
+        .wrap-page .innovative-inner .wrap-content .wrap-img-desc .group-text {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          position: absolute;
+          top: 94px;
+          left: 51px; }
+          .wrap-page .innovative-inner .wrap-content .wrap-img-desc .group-text p {
+            width: 130px;
+            padding-block: 10px;
+            color: #fff;
+            font-size: 18px;
+            font-weight: 700;
+            line-height: 1;
+            background-color: var(--foundation-orange-normal);
+            border-radius: 8px 0 0 8px; }
+            .wrap-page .innovative-inner .wrap-content .wrap-img-desc .group-text p:last-child {
+              background-color: var(--foundation-blue-normal-hover);
+              border-radius: 0 8px 8px 0; }
+      .wrap-page .innovative-inner .wrap-content .content p {
+        color: var(--dark);
+        font-size: 20px;
+        line-height: 2; }
+        .wrap-page .innovative-inner .wrap-content .content p span {
+          font-weight: 700; }
+        .wrap-page .innovative-inner .wrap-content .content p:last-child {
+          color: var(--foundation-orange-normal);
+          font-weight: 700; }
+  .wrap-page .efficiency-inner {
+    padding: 69px 0 100px 0;
+    text-align: center; }
+    .wrap-page .efficiency-inner h3 {
+      color: var(--foundation-blue-normal-hover);
+      font-size: 24px;
+      font-weight: 500;
+      line-height: 1.4;
+      margin-bottom: 16px; }
+    .wrap-page .efficiency-inner h2 {
+      line-height: 1.4;
+      padding-bottom: 34px;
+      background: url(../image/icon/brackets.svg) no-repeat bottom center;
+      margin-bottom: 46px; }
+      .wrap-page .efficiency-inner h2 span {
+        color: #06ad35; }
+    .wrap-page .efficiency-inner .wrap-img-desc {
+      margin-bottom: 15px; }
+      .wrap-page .efficiency-inner .wrap-img-desc img {
+        width: 494px;
+        height: auto; }
+    .wrap-page .efficiency-inner .wrap-content {
+      padding-inline: 185px; }
+      .wrap-page .efficiency-inner .wrap-content .content {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+        padding: 27px 24px 26px 24px;
+        border-radius: 20px;
+        background: #eef8fd;
+        margin-bottom: 15px; }
+        .wrap-page .efficiency-inner .wrap-content .content:last-child {
+          margin-bottom: 0; }
+        .wrap-page .efficiency-inner .wrap-content .content .wrap-img {
+          width: 48px; }
+        .wrap-page .efficiency-inner .wrap-content .content p {
+          width: calc(100% - 48px - 16px);
+          color: var(--dark);
+          font-size: 20px;
+          line-height: 1.4;
+          text-align: left; }
+          .wrap-page .efficiency-inner .wrap-content .content p span {
+            font-weight: 700; }
+  .wrap-page .introduction {
+    background-color: #f8f8f8; }
+    .wrap-page .introduction-inner {
+      padding: 100px 0 99px; }
+      .wrap-page .introduction-inner .introduction-text {
+        display: flex;
+        align-items: center;
+        gap: 48px;
+        padding-bottom: 49px;
+        border-bottom: 1px solid #ccd8dd;
+        margin-bottom: 48px; }
+        .wrap-page .introduction-inner .introduction-text .wrap-img {
+          width: 268px; }
+        .wrap-page .introduction-inner .introduction-text .content {
+          padding: 17px 0 17px 24px;
+          position: relative; }
+          .wrap-page .introduction-inner .introduction-text .content::before {
+            content: "";
+            display: inline-block;
+            position: absolute;
+            width: 6px;
+            height: 100%;
+            background-color: var(--foundation-blue-normal);
+            top: 0;
+            left: 0; }
+          .wrap-page .introduction-inner .introduction-text .content .title {
+            color: var(--dark);
+            font-size: 24px;
+            line-height: 1.45;
+            margin-bottom: 13px; }
+            .wrap-page .introduction-inner .introduction-text .content .title span {
+              font-weight: 700; }
+          .wrap-page .introduction-inner .introduction-text .content a {
+            color: var(--foundation-blue-normal);
+            font-size: 20px;
+            font-weight: 700;
+            line-height: 2;
+            text-decoration-line: underline;
+            display: inline-block;
+            padding-right: 52px;
+            background: url("../image/icon/arrow.svg") no-repeat right 0px top -5px;
+            background-size: contain;
+            margin-bottom: 9px; }
+          .wrap-page .introduction-inner .introduction-text .content .desc {
+            color: var(--dark);
+            line-height: 1.5; }
+      .wrap-page .introduction-inner .wrap-ytb {
+        display: flex;
+        gap: 30px;
+        align-items: center; }
+        .wrap-page .introduction-inner .wrap-ytb .wrap-text {
+          width: calc(100% - 550px - 33px); }
+          .wrap-page .introduction-inner .wrap-ytb .wrap-text p {
+            color: var(--dark);
+            font-size: 40px;
+            font-weight: 700;
+            line-height: 1.4;
+            margin-bottom: 7px; }
+            .wrap-page .introduction-inner .wrap-ytb .wrap-text p:last-child {
+              font-size: 16px;
+              font-weight: 400;
+              margin: 0;
+              padding-right: 15px; }
+        .wrap-page .introduction-inner .wrap-ytb .ytb {
+          width: 550px;
+          line-height: 0;
+          box-shadow: 0px 6px 10.4px 0px rgba(0, 0, 0, 0.25);
+          border-radius: 24px; }
+  .wrap-page .advice {
+    background: radial-gradient(41.39% 41.39% at 50% 105.49%, rgba(212, 233, 244, 0.32) 0%, rgba(212, 233, 244, 0) 100%), #0178a9; }
+    .wrap-page .advice-inner {
+      padding-block: 100px;
+      color: #fff; }
+      .wrap-page .advice-inner .advice-detail {
+        display: flex;
+        align-items: center;
+        gap: 50px;
+        margin-bottom: 48px; }
+        .wrap-page .advice-inner .advice-detail .wrap-img {
+          width: 300px; }
+        .wrap-page .advice-inner .advice-detail .content {
+          width: calc(100% - 300px - 50px); }
+          .wrap-page .advice-inner .advice-detail .content p {
+            color: #fff;
+            font-size: 24px;
+            font-weight: 700;
+            line-height: 1.5;
+            margin-bottom: 15px; }
+            .wrap-page .advice-inner .advice-detail .content p:last-child {
+              font-weight: 400;
+              margin-bottom: 0; }
+              .wrap-page .advice-inner .advice-detail .content p:last-child span {
+                font-weight: 700;
+                text-decoration-line: underline; }
+      .wrap-page .advice-inner > p {
+        color: var(--white);
+        font-weight: 400;
+        line-height: 1.45;
+        margin-bottom: 24px; }
+      .wrap-page .advice-inner .group-ytb {
+        display: flex;
+        gap: 20px;
+        align-items: center; }
+        .wrap-page .advice-inner .group-ytb img {
+          width: calc((100% - 40px) / 3);
+          border-radius: 24px; }
+  .wrap-page .greeting {
+    background: url("../image/landing/bg-greeting.png") no-repeat top left;
+    background-size: cover; }
+    .wrap-page .greeting-inner {
+      padding-block: 100px;
+      text-align: center; }
+      .wrap-page .greeting-inner h2 {
+        padding-bottom: 35px;
+        background: url("../image/icon/brackets.svg") no-repeat bottom left 26px;
+        background-size: 88%;
+        line-height: 1.35; }
+      .wrap-page .greeting-inner .greeting-text {
+        display: flex;
+        gap: 48px; }
+        .wrap-page .greeting-inner .greeting-text .wrap-img {
+          width: 432px; }
+        .wrap-page .greeting-inner .greeting-text .text {
+          width: calc(100% - 432px - 48px);
+          text-align: left; }
+          .wrap-page .greeting-inner .greeting-text .text p {
+            color: var(--dark);
+            line-height: 1.45;
+            margin-bottom: 8px; }
+            .wrap-page .greeting-inner .greeting-text .text p:last-child {
+              margin-bottom: 0; }
+              .wrap-page .greeting-inner .greeting-text .text p:last-child span {
+                font-weight: 700; }
+          .wrap-page .greeting-inner .greeting-text .text .text-blue {
+            color: var(--foundation-blue-normal);
+            font-size: 20px;
+            font-weight: 700;
+            line-height: 1.5; }
 
 /*# sourceMappingURL=style.css.map */
