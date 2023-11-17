@@ -189,7 +189,10 @@ img {
     .wrap-page .wrap-contact .contact {
       padding: 8px 20px;
       display: flex;
+      align-items: center;
       gap: 7px; }
+      .wrap-page .wrap-contact .contact .wrap-img {
+        line-height: 0; }
       .wrap-page .wrap-contact .contact span {
         color: #fff;
         font-weight: 500;
@@ -404,7 +407,7 @@ img {
       margin-bottom: 0; }
       .wrap-page .issue .solution-head-inner {
         text-align: center;
-        padding: 57px 0 50px 0;
+        padding: 55px 0 50px 0;
         position: relative; }
         .wrap-page .issue .solution-head-inner::after {
           content: "";
@@ -452,8 +455,7 @@ img {
             flex-direction: column;
             justify-content: space-between;
             align-items: center;
-            align-self: stretch;
-            margin-bottom: 26px; }
+            margin-bottom: 27px; }
             .wrap-page .issue .solution-content-inner .solution-item .card .title {
               color: var(--dark);
               font-size: 24px;
@@ -487,7 +489,8 @@ img {
     color: var(--dark);
     font-size: 40px;
     font-weight: 700;
-    line-height: 0.85; }
+    line-height: 0.85;
+    text-align: center; }
   .wrap-page .inheritance-diagram-inner {
     padding: 100px 0 101px;
     text-align: center; }
@@ -565,7 +568,7 @@ img {
   .wrap-page .terms {
     text-align: center; }
     .wrap-page .terms-inner {
-      padding-bottom: 131px; }
+      padding-bottom: 130px; }
       .wrap-page .terms-inner h2 {
         background-color: var(--foundation-blue-normal);
         padding: 30px 0;
@@ -612,10 +615,10 @@ img {
             font-size: 14px;
             line-height: 1.4;
             margin-bottom: 6px; }
-    .wrap-page .terms .line {
-      background: #ffe9d7;
-      height: 20px;
-      display: block; }
+  .wrap-page .line-block {
+    background: #ffe9d7;
+    height: 20px;
+    display: block; }
   .wrap-page .innovative {
     background-color: #f0f7fa; }
     .wrap-page .innovative-inner {
@@ -623,12 +626,12 @@ img {
       text-align: center; }
       .wrap-page .innovative-inner h2 {
         line-height: 1.4;
-        padding-bottom: 33px;
+        padding-bottom: 34px;
         background: url(../image/icon/brackets.svg) no-repeat bottom left 24px; }
       .wrap-page .innovative-inner .wrap-content .wrap-img-desc {
         position: relative;
         display: inline-block;
-        margin-bottom: 16px; }
+        margin-bottom: 15px; }
         .wrap-page .innovative-inner .wrap-content .wrap-img-desc img {
           width: 386px;
           height: auto; }
@@ -673,7 +676,7 @@ img {
       line-height: 1.4;
       padding-bottom: 34px;
       background: url(../image/icon/brackets.svg) no-repeat bottom center;
-      margin-bottom: 46px; }
+      margin-bottom: 47px; }
       .wrap-page .efficiency-inner h2 span {
         color: #06ad35; }
     .wrap-page .efficiency-inner .wrap-img-desc {
@@ -706,14 +709,14 @@ img {
   .wrap-page .introduction {
     background-color: #f8f8f8; }
     .wrap-page .introduction-inner {
-      padding: 100px 0 99px; }
+      padding: 100px 0; }
       .wrap-page .introduction-inner .introduction-text {
         display: flex;
         align-items: center;
         gap: 48px;
         padding-bottom: 49px;
         border-bottom: 1px solid #ccd8dd;
-        margin-bottom: 48px; }
+        margin-bottom: 47px; }
         .wrap-page .introduction-inner .introduction-text .wrap-img {
           width: 268px; }
         .wrap-page .introduction-inner .introduction-text .content {
@@ -789,8 +792,8 @@ img {
             color: #fff;
             font-size: 24px;
             font-weight: 700;
-            line-height: 1.5;
-            margin-bottom: 15px; }
+            line-height: 1.45;
+            margin-bottom: 18px; }
             .wrap-page .advice-inner .advice-detail .content p:last-child {
               font-weight: 400;
               margin-bottom: 0; }
@@ -801,7 +804,7 @@ img {
         color: var(--white);
         font-weight: 400;
         line-height: 1.45;
-        margin-bottom: 24px; }
+        margin-bottom: 23px; }
       .wrap-page .advice-inner .group-ytb {
         display: flex;
         gap: 20px;
@@ -813,13 +816,14 @@ img {
     background: url("../image/landing/bg-greeting.png") no-repeat top left;
     background-size: cover; }
     .wrap-page .greeting-inner {
-      padding-block: 100px;
+      padding: 100px 0 102px;
       text-align: center; }
       .wrap-page .greeting-inner h2 {
         padding-bottom: 35px;
         background: url("../image/icon/brackets.svg") no-repeat bottom left 26px;
         background-size: 88%;
-        line-height: 1.35; }
+        line-height: 1.35;
+        margin-bottom: 50px; }
       .wrap-page .greeting-inner .greeting-text {
         display: flex;
         gap: 48px; }
@@ -835,11 +839,92 @@ img {
             .wrap-page .greeting-inner .greeting-text .text p:last-child {
               margin-bottom: 0; }
               .wrap-page .greeting-inner .greeting-text .text p:last-child span {
-                font-weight: 700; }
+                font-weight: 700;
+                margin-left: 32px; }
+                .wrap-page .greeting-inner .greeting-text .text p:last-child span:last-child {
+                  margin-left: 16px; }
           .wrap-page .greeting-inner .greeting-text .text .text-blue {
             color: var(--foundation-blue-normal);
             font-size: 20px;
             font-weight: 700;
             line-height: 1.5; }
+  .wrap-page .profile-flow-inner {
+    padding-block: 100px;
+    text-align: center;
+    padding-inline: 120px; }
+    .wrap-page .profile-flow-inner h2 {
+      line-height: 1.35;
+      padding-bottom: 25px;
+      background: url("../image/icon/brackets.svg") no-repeat bottom left 16px;
+      background-size: 89%; }
+    .wrap-page .profile-flow-inner ul li {
+      position: relative;
+      margin-bottom: 43.35px; }
+      .wrap-page .profile-flow-inner ul li:first-child .content {
+        border-radius: 0;
+        padding-bottom: 0; }
+      .wrap-page .profile-flow-inner ul li:last-child {
+        margin-bottom: 0; }
+        .wrap-page .profile-flow-inner ul li:last-child::after {
+          width: 0; }
+      .wrap-page .profile-flow-inner ul li::after {
+        content: "";
+        width: 60px;
+        height: 32px;
+        background: url("../image/landing/arrow-double.png") no-repeat;
+        position: absolute;
+        bottom: -32px;
+        left: 50%;
+        transform: translateX(-50%);
+        display: block;
+        background-size: contain;
+        z-index: 1; }
+      .wrap-page .profile-flow-inner ul li p {
+        display: block;
+        margin: 0;
+        text-align: left; }
+      .wrap-page .profile-flow-inner ul li .title {
+        padding: 10px 40px;
+        background: var(--foundation-blue-normal);
+        color: #fff;
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 1.35;
+        border-radius: 16px 16px 0 0; }
+      .wrap-page .profile-flow-inner ul li .content {
+        color: var(--dark);
+        line-height: 1.45;
+        padding: 24px 40px;
+        background: #f0f7fa;
+        border-radius: 0 0 16px 16px; }
+      .wrap-page .profile-flow-inner ul li .wrap-contact {
+        padding-block: 24px;
+        justify-content: center;
+        gap: 8px;
+        background-color: #f6f6f6;
+        border-radius: 0 0 16px 16px; }
+        .wrap-page .profile-flow-inner ul li .wrap-contact .contact {
+          border-radius: 100px;
+          padding: 10px 25px;
+          font-size: 20.5px;
+          font-weight: 500;
+          line-height: 1.5;
+          gap: 9px; }
+          .wrap-page .profile-flow-inner ul li .wrap-contact .contact .wrap-img {
+            width: 28px; }
+        .wrap-page .profile-flow-inner ul li .wrap-contact .phone .text-phone {
+          padding-right: 10px; }
+        .wrap-page .profile-flow-inner ul li .wrap-contact .phone span:last-child {
+          font-size: 30.5px;
+          line-height: 1;
+          font-weight: 900; }
+  .wrap-page .qna-inner {
+    padding: 81px 0 100px;
+    text-align: center; }
+    .wrap-page .qna-inner h2 {
+      line-height: 1.35;
+      padding-bottom: 24px;
+      background: url("../image/icon/brackets.svg") no-repeat bottom left 8px;
+      background-size: 93%; }
 
 /*# sourceMappingURL=style.css.map */
