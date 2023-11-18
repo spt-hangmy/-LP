@@ -140,6 +140,7 @@ a {
 }
 img {
   width: 100%;
+  height: auto;
 }
 .container {
   max-width: 980px;
@@ -1163,14 +1164,231 @@ img {
 
   // style qna
   .qna {
+    background: #f0f7fa;
     &-inner {
       padding: 81px 0 100px;
       text-align: center;
       h2 {
         line-height: 1.35;
         padding-bottom: 24px;
-        background: url('../image/icon/brackets.svg') no-repeat bottom left 8px;
+        background: url("../image/icon/brackets.svg") no-repeat bottom left 8px;
         background-size: 93%;
+      }
+      .qna-customer,
+      .qna-general {
+        text-align: left;
+        margin-bottom: 48px;
+        .wrap-title {
+          border-bottom: 3px solid var(--foundation-blue-normal-hover);
+          margin-bottom: 16px;
+          p {
+            color: #fff;
+            font-size: 24px;
+            font-weight: 700;
+            line-height: 1.4;
+            padding: 8px 16px;
+            border-radius: 16px 16px 0px 0px;
+            background: var(--foundation-blue-normal-hover);
+            margin-bottom: 0;
+            display: inline-block;
+          }
+        }
+        .list-qna {
+          li {
+            border: 1px solid #46a5ea;
+            border-radius: 16px;
+            overflow: hidden;
+            margin-bottom: 16px;
+            cursor: pointer;
+            &:last-child {
+              margin-bottom: 0;
+            }
+            .wrap-question,
+            .wrap-answer {
+              padding: 15px 96px 15px 24px;
+              background-color: #46a5ea;
+              display: flex;
+              align-items: center;
+              gap: 16px;
+              .wrap-icon {
+                width: 40px;
+                line-height: 0;
+              }
+              > p {
+                width: calc(100% - 40px - 16px);
+              }
+            }
+            .wrap-question {
+              position: relative;
+              button {
+                position: absolute;
+                right: 24px;
+                top: 50%;
+                transform: translateY(-50%);
+                width: 24px;
+                background: none;
+                border: none;
+                line-height: 0;
+              }
+              p {
+                color: #fff;
+                font-size: 20px;
+                font-weight: 500;
+                line-height: 1.35;
+              }
+            }
+            .wrap-answer {
+              padding: 26px 24px;
+              background: var(--foundation-blue-light);
+              p {
+                color: var(--dark);
+                line-height: 1.35;
+              }
+            }
+            .show-icon {
+              display: inline; /* Hiển thị ảnh "show" mặc định */
+            }
+            .hide-icon {
+              display: none; /* Ẩn ảnh "hide" mặc định */
+            }
+            .wrap-answer {
+              display: none;
+            }
+          }
+        }
+      }
+      .qna-general {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  // style footer
+  .footer {
+    &-top {
+      background: radial-gradient(
+          41.39% 41.39% at 50% 105.49%,
+          rgba(212, 233, 244, 0.32) 0%,
+          rgba(212, 233, 244, 0) 100%
+        ),
+        #0178a9;
+      &-inner {
+        padding-block: 62px;
+        display: flex;
+        gap: 20px;
+        color: #fff;
+        > div {
+          width: calc((100% - 60px) / 4);
+        }
+        .info-general {
+          padding-right: 2px;
+          .title {
+            font-size: 24px;
+            font-weight: 700;
+            line-height: 1.45;
+            // margin-bottom: 10px;
+          }
+          .sub-title {
+            margin-bottom: 16px;
+            line-height: 2.15;
+          }
+          .wrap-time {
+            font-weight: 700;
+            line-height: 1.39;
+            margin-bottom: 19px;
+            .time {
+              font-size: 20px;
+            }
+            .desc {
+              font-size: 14px;
+              font-weight: 400;
+            }
+          }
+          .address {
+            font-size: 14px;
+            line-height: 1.7;
+          }
+        }
+        .qna-contact {
+          padding: 16px;
+          border-radius: 16px;
+          background: rgba(255, 255, 255, 0.08);
+          .wrap-img {
+            border-radius: 16px;
+            overflow: hidden;
+            line-height: 0;
+            margin-bottom: 20px;
+          }
+          .title {
+            font-size: 18px;
+            font-weight: 700;
+            line-height: 1.45;
+            margin-bottom: 11px;
+          }
+          .phone {
+            display: flex;
+            gap: 11.5px;
+            align-items: center;
+            margin-bottom: 11px;
+            img {
+              width: 35px;
+              height: auto;
+            }
+            p {
+              width: calc(100% - 35px - 11.5px);
+              font-size: 20px;
+              font-weight: 700;
+              line-height: 1.45;
+              margin-bottom: 0;
+            }
+          }
+          .link {
+            width: 146px;
+            display: flex;
+            font-size: 14px;
+            font-weight: 700;
+            line-height: 1.65;
+            align-items: center;
+            padding: 8px 31px 8px 15px;
+            margin-bottom: 11px;
+            background: var(--foundation-orange-normal);
+            border-radius: 100px;
+            gap: 8px;
+            img {
+              width: 8px;
+            }
+          }
+          .desc {
+            font-size: 12px;
+            line-height: 1.35;
+          }
+        }
+      }
+    }
+    &-bottom {
+      padding-block: 24px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      h3 {
+        color: var(--foundation-blue-normal);
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 1;
+        letter-spacing: 2.64px;
+      }
+      .wrap-link {
+        display: flex;
+        gap: 32px;
+        a {
+          color: var(--dark);
+          font-size: 14px;
+          line-height: 1.45;
+          &:first-child {
+            text-decoration-line: underline;
+            color: var(--foundation-blue-normal);
+          }
+        }
       }
     }
   }
