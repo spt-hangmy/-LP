@@ -159,8 +159,10 @@ img {
     display: flex;
     justify-content: space-between;
     align-items: center; }
-    .wrap-page .header .header-inner h1 {
+    .wrap-page .header .header-inner .wrap-h1-menu h1 {
       width: 318px; }
+    .wrap-page .header .header-inner .wrap-h1-menu .menu-mobile {
+      display: block; }
     .wrap-page .header .header-inner .wrap-nav ul {
       display: flex;
       justify-content: end;
@@ -1067,7 +1069,8 @@ img {
           display: flex;
           gap: 11.5px;
           align-items: center;
-          margin-bottom: 11px; }
+          margin-bottom: 11px;
+          cursor: pointer; }
           .wrap-page .footer-top-inner .qna-contact .phone img {
             width: 35px;
             height: auto; }
@@ -1088,7 +1091,8 @@ img {
           margin-bottom: 11px;
           background: var(--foundation-orange-normal);
           border-radius: 100px;
-          gap: 8px; }
+          gap: 8px;
+          cursor: pointer; }
           .wrap-page .footer-top-inner .qna-contact .link img {
             width: 8px; }
         .wrap-page .footer-top-inner .qna-contact .desc {
@@ -1111,9 +1115,86 @@ img {
       .wrap-page .footer-bottom .wrap-link a {
         color: var(--dark);
         font-size: 14px;
-        line-height: 1.45; }
+        line-height: 1.45;
+        cursor: pointer; }
         .wrap-page .footer-bottom .wrap-link a:first-child {
           text-decoration-line: underline;
           color: var(--foundation-blue-normal); }
+
+@media screen and (max-width: 640px) {
+  .container {
+    max-width: 375px;
+    width: 100%;
+    padding: 0 16px;
+    margin: 0 auto; }
+
+  .wrap-page .header .header-inner {
+    flex-wrap: wrap;
+    padding-block: 0;
+    margin-left: -16px;
+    margin-right: -16px; }
+    .wrap-page .header .header-inner .wrap-h1-menu {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      order: 1;
+      padding: 16px;
+      width: 100%; }
+      .wrap-page .header .header-inner .wrap-h1-menu h1 {
+        width: 212px; }
+      .wrap-page .header .header-inner .wrap-h1-menu .menu-mobile {
+        display: inline-block;
+        background: none;
+        border: none;
+        line-height: 0; }
+    .wrap-page .header .header-inner .wrap-nav {
+      width: 100%; }
+      .wrap-page .header .header-inner .wrap-nav nav {
+        display: none; }
+      .wrap-page .header .header-inner .wrap-nav .wrap-contact {
+        margin-bottom: 0; }
+        .wrap-page .header .header-inner .wrap-nav .wrap-contact .contact {
+          width: 50%;
+          border-radius: 0;
+          justify-content: center;
+          padding: 4px 20px; }
+        .wrap-page .header .header-inner .wrap-nav .wrap-contact .phone {
+          display: none; }
+  .wrap-page .inheritances {
+    background: linear-gradient(0deg, rgba(255, 255, 255, 0.7) 0%, rgba(255, 255, 255, 0.7) 100%), linear-gradient(90deg, #77ccfa 0%, #d3f8e9 100%); }
+    .wrap-page .inheritances .inheritances-inner {
+      padding-top: 24px;
+      flex-wrap: wrap;
+      position: relative; }
+      .wrap-page .inheritances .inheritances-inner .wrap-content {
+        width: 100%;
+        padding: 0;
+        padding-bottom: 105px; }
+        .wrap-page .inheritances .inheritances-inner .wrap-content .tag {
+          margin-bottom: 9px; }
+        .wrap-page .inheritances .inheritances-inner .wrap-content .title {
+          font-size: 20px;
+          margin-bottom: 6px; }
+        .wrap-page .inheritances .inheritances-inner .wrap-content .commit {
+          font-size: 48px;
+          letter-spacing: 5.28px;
+          margin-bottom: 4px; }
+          .wrap-page .inheritances .inheritances-inner .wrap-content .commit span {
+            letter-spacing: 3.3px; }
+        .wrap-page .inheritances .inheritances-inner .wrap-content .desc {
+          font-size: 12px;
+          padding-inline: 21px;
+          line-height: 1.45; }
+        .wrap-page .inheritances .inheritances-inner .wrap-content .wrap-rental-price {
+          margin-bottom: -3px; }
+      .wrap-page .inheritances .inheritances-inner .wrap-img-special {
+        width: 100%;
+        position: absolute;
+        bottom: -53px;
+        left: 2px;
+        display: block; }
+        .wrap-page .inheritances .inheritances-inner .wrap-img-special img {
+          width: 340px;
+          position: unset; } }
 
 /*# sourceMappingURL=style.css.map */
