@@ -39,4 +39,23 @@ $(document).ready(function () {
     const newDisplayStyle = answerSection.is(":hidden") ? "none" : "flex";
     answerSection.css("display", newDisplayStyle);
   });
+  $(".menu-mobile").click(function () {
+    $(".navigation").toggleClass("active");
+    var openButton = document.querySelector(".open");
+    var closeButton = document.querySelector(".close");
+    if ($(".navigation").hasClass("active")) {
+      openButton.style.display = "none";
+      closeButton.style.display = "inline-block";
+      $("body").css("overflow", "hidden");
+      $(".wrap-h1-menu").css(
+        "box-shadow",
+        "0px 4px 4px 0px rgba(0, 0, 0, 0.02)"
+      );
+    } else {
+      $("body").css("overflow", "auto");
+      openButton.style.display = "inline-block";
+      closeButton.style.display = "none";
+      $(".wrap-h1-menu").css("box-shadow", "none");
+    }
+  });
 });
