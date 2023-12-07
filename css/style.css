@@ -595,11 +595,48 @@ body {
             line-height: 1.35; }
     .wrap-page .price-package-inner .wrap-line {
       padding-inline: 15px;
-      margin-bottom: 45px; }
+      margin-bottom: 49px; }
       .wrap-page .price-package-inner .wrap-line .line {
         height: 15px;
         width: 100%;
-        background-color: #B8DBEA; }
+        background-color: #b8dbea; }
+    .wrap-page .price-package-inner .wrap-table {
+      text-align: left;
+      padding-inline: 88px; }
+      .wrap-page .price-package-inner .wrap-table .desc {
+        color: #2f2e57;
+        font-weight: 500;
+        line-height: 1.35;
+        margin-bottom: 16px;
+        font-size: 16px; }
+      .wrap-page .price-package-inner .wrap-table p {
+        color: #2f2e57;
+        font-size: 20px;
+        line-height: 1.4; }
+        .wrap-page .price-package-inner .wrap-table p span {
+          font-weight: bold; }
+      .wrap-page .price-package-inner .wrap-table .text-bg {
+        position: relative;
+        z-index: 1;
+        margin-bottom: 32px; }
+        .wrap-page .price-package-inner .wrap-table .text-bg::after {
+          content: "";
+          position: absolute;
+          width: 666px;
+          height: 18px;
+          background-color: #fffdc6;
+          left: -5px;
+          bottom: -8px;
+          z-index: -1; }
+      .wrap-page .price-package-inner .wrap-table .table .title {
+        background-color: #1ba841;
+        text-align: center;
+        padding: 16px;
+        color: #fff;
+        font-size: 20px;
+        font-weight: 700;
+        line-height: 1.4;
+        border-radius: 24px 24px 0 0; }
 .wrap-page .terms {
   text-align: center; }
   .wrap-page .terms-inner {
