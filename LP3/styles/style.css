@@ -198,35 +198,24 @@ body {
       height: 300px; }
     .introduce-inner .wrap-content .wrap-top {
       gap: 30px; }
-    .introduce-inner .wrap-content .wrap-desc p {
-      color: #d42020;
-      font-size: 24px;
-      font-weight: 700;
-      line-height: 1.35;
-      padding: 28px 23px 28px 57px;
-      display: inline-block;
+    .introduce-inner .wrap-content .wrap-desc {
+      background: url("../image/landing/ellipse.png") no-repeat top center;
+      background-size: contain;
+      height: fit-content;
       position: relative;
-      z-index: 1; }
-      .introduce-inner .wrap-content .wrap-desc p::before {
-        content: "";
+      top: -60px; }
+      .introduce-inner .wrap-content .wrap-desc p {
+        color: #d42020;
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 1.35;
+        padding: 28px 25px 30px 60px;
         display: inline-block;
-        width: 243px;
-        height: 84px;
-        background: url("../image/landing/ellipse.png") no-repeat top center;
-        background-size: contain;
-        position: absolute;
-        left: 20px;
-        z-index: 0; }
-      .introduce-inner .wrap-content .wrap-desc p::after {
-        content: "";
-        display: inline-block;
-        width: 34px;
-        height: 31px;
-        background: url("../image/icon/checked.svg");
-        background-size: contain;
-        position: absolute;
-        transform: rotate(-7deg);
-        left: 20px; }
+        position: relative;
+        z-index: 1;
+        background: url("../image/icon/checked.svg") no-repeat center left 25px;
+        background-size: 34px;
+        transform: rotate(5deg); }
   .introduce-inner .group-ads {
     gap: 0;
     padding-inline: 16px;

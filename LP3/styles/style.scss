@@ -208,38 +208,24 @@ body {
         gap: 30px;
       }
       .wrap-desc {
+        background: url("../image/landing/ellipse.png") no-repeat top center;
+        background-size: contain;
+        height: fit-content;
+        position: relative;
+        top: -60px;
         p {
           color: #d42020;
           font-size: 24px;
           font-weight: 700;
           line-height: 1.35;
-          padding: 28px 23px 28px 57px;
+          padding: 28px 25px 30px 60px;
           display: inline-block;
           position: relative;
           z-index: 1;
-          &::before {
-            content: "";
-            display: inline-block;
-            width: 243px;
-            height: 84px;
-            background: url("../image/landing/ellipse.png") no-repeat top center;
-            background-size: contain;
-            position: absolute;
-            // transform: rotate(-7deg);
-            left: 20px;
-            z-index: 0;
-          }
-          &::after {
-            content: "";
-            display: inline-block;
-            width: 34px;
-            height: 31px;
-            background: url("../image/icon/checked.svg");
-            background-size: contain;
-            position: absolute;
-            transform: rotate(-7deg);
-            left: 20px;
-          }
+          background: url("../image/icon/checked.svg") no-repeat center left
+            25px;
+          background-size: 34px;
+          transform: rotate(5deg);
         }
       }
     }
@@ -373,14 +359,14 @@ body {
           bottom: -27px;
           left: 50%;
           transform: translateX(-50%);
-          background: url('../image/icon/line.svg');
+          background: url("../image/icon/line.svg");
           background-size: contain;
         }
       }
       .wrap-content {
         p {
           padding: 16px 16px 16px 68px;
-          background: url('../image/icon/check-square.svg') no-repeat;
+          background: url("../image/icon/check-square.svg") no-repeat;
         }
       }
     }
