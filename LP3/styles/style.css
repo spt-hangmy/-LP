@@ -322,4 +322,71 @@ body {
         letter-spacing: 2px;
         text-align: left; }
 
+.attention {
+  position: relative; }
+  .attention .tag-attention {
+    width: 167px;
+    height: 138px;
+    background: url("../image/landing/attention-bg.png") no-repeat top left;
+    background-size: contain;
+    color: #c21011;
+    text-align: center;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 0.75;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    left: 50%;
+    top: -68px;
+    transform: translateX(-50%); }
+    .attention .tag-attention p {
+      position: absolute;
+      bottom: 35px; }
+  .attention-inner {
+    padding-top: 129px;
+    text-align: center; }
+    .attention-inner .text-1 {
+      color: #2f2e57;
+      font-size: 36px;
+      font-weight: 700;
+      line-height: 1.28;
+      letter-spacing: 3.6px;
+      margin-bottom: 8px; }
+    .attention-inner .text-2 {
+      align-items: baseline;
+      justify-content: center;
+      margin-bottom: 15px; }
+      .attention-inner .text-2 span:first-child {
+        background: linear-gradient(180deg, #ff2728 0%, #af1617 80.21%, #920d0e 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-size: 56px;
+        font-weight: 700;
+        line-height: 1.32;
+        text-decoration: underline;
+        position: relative; }
+        .attention-inner .text-2 span:first-child::after {
+          content: "";
+          width: 100%;
+          height: 2.5px;
+          background-color: #980f10;
+          position: absolute;
+          bottom: 2.5px;
+          left: 0;
+          display: inline-block; }
+      .attention-inner .text-2 span:nth-child(2) {
+        color: #2f2e57;
+        font-size: 36px;
+        font-weight: 700;
+        text-decoration-line: none;
+        line-height: 1.61;
+        -webkit-text-fill-color: #2f2e57; }
+    .attention-inner .text-3 {
+      color: #2f2e57;
+      font-size: 24px;
+      font-weight: 500;
+      line-height: 1.67;
+      letter-spacing: 2.4px; }
+
 /*# sourceMappingURL=style.css.map */
