@@ -791,6 +791,7 @@ body {
             left: unset;
             right: -5px;
             background: url("../image/icon/line-right.svg") no-repeat top left;
+            background-size: contain;
           }
         }
       }
@@ -929,6 +930,12 @@ body {
       position: relative;
       padding-right: 4px;
       margin-bottom: 32px;
+      img:nth-child(1) {
+        display: inline-block;
+      }
+      img:nth-child(2) {
+        display: none;
+      }
       p.question {
         font-size: 20px;
         font-weight: 700;
@@ -950,6 +957,9 @@ body {
       &:nth-child(2) {
         p.question {
           top: 48px;
+          span {
+            display: block;
+          }
         }
         p.answer {
           bottom: 76px;
@@ -1335,6 +1345,7 @@ body {
 
   // benefit
   .benefit {
+    overflow: hidden;
     &-inner {
       padding-top: 41px;
       padding-bottom: 87px;
@@ -1425,6 +1436,7 @@ body {
     }
     &-inner {
       padding-top: 43px;
+      padding-bottom: 40px;
       .text-1 {
         font-size: 20px;
         line-height: 1.5;
@@ -1530,6 +1542,293 @@ body {
           gap: 8px;
           .story {
             width: 100%;
+          }
+        }
+      }
+    }
+  }
+
+  // advise
+  .advise {
+    &-inner {
+      padding: 41px 0 48px;
+      .wrap-title {
+        margin-bottom: 20px;
+        > div {
+          width: 100% !important;
+        }
+        .title {
+          order: 0;
+          margin-bottom: 35px;
+          p:first-child {
+            font-size: 20px;
+            line-height: 1.5;
+            margin-bottom: 6px;
+          }
+          p:nth-child(2) {
+            font-size: 24px;
+            line-height: 1.17;
+            letter-spacing: 0px;
+            padding-left: 12px;
+            &::before,
+            &::after {
+              width: 20px;
+              height: 45px;
+              bottom: 0px;
+              left: 3px;
+            }
+            &::after {
+              left: unset;
+              right: 3px;
+            }
+          }
+        }
+        .wrap-img {
+          order: 2;
+          padding: 0;
+          margin-top: -59px;
+          position: relative;
+          img {
+            width: 234px;
+          }
+        }
+        .desc p {
+          width: 100%;
+          padding: 16px 28px 24px 30px;
+          font-size: 12px;
+          line-height: 1.56;
+          background: url("../image/landing/Union-mb.png") no-repeat top left;
+          background-size: cover;
+        }
+      }
+      .wrap-content {
+        .title {
+          font-size: 20px;
+          line-height: 1.5;
+          margin-bottom: 24px;
+        }
+        .group-block {
+          flex-wrap: wrap;
+          gap: 8px;
+          .block {
+            width: 100%;
+            flex-wrap: wrap;
+            gap: 8px;
+            .wrap-img {
+              width: 100%;
+              top: unset;
+              img {
+                width: 100px;
+              }
+            }
+            .content {
+              width: 100%;
+              p:first-child {
+                margin-bottom: 8px;
+              }
+              p:nth-child(2) {
+                padding-right: 20px;
+                span {
+                  display: block;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  // reason
+  .reason {
+    &-inner {
+      padding: 40px 0 39px;
+      h2 {
+        font-size: 28px;
+        font-weight: 700;
+        line-height: 1.35;
+        margin-bottom: 25px;
+        span {
+          display: block;
+        }
+      }
+      .group-reason {
+        flex-wrap: wrap;
+        .wrap-reason {
+          width: 100%;
+          .wrap-img {
+            margin-bottom: 8px;
+          }
+          .title {
+            margin-bottom: 8px;
+          }
+        }
+      }
+    }
+  }
+
+  // however
+  .however {
+    .container {
+      padding: 0;
+    }
+    .line {
+      padding-block: 16px;
+      margin-bottom: 54px;
+      p {
+        font-size: 28px;
+        line-height: 1.4;
+      }
+    }
+    .group-qna {
+      margin-bottom: 38px;
+      .qna {
+        padding-right: 0;
+        margin-bottom: 15px;
+        img:nth-child(1) {
+          display: none;
+        }
+        img:nth-child(2) {
+          display: inline-block;
+        }
+        p.question {
+          font-size: 12px;
+          font-weight: 500;
+          line-height: 1.33;
+          width: 165px;
+          top: 101px !important;
+          left: unset;
+          transform: unset !important;
+          right: 36px;
+          span {
+            display: inline !important;
+          }
+        }
+        p.answer {
+          font-size: 12px;
+          line-height: 1.5;
+          bottom: 18px;
+          left: 24px;
+          width: 179px;
+          span {
+            display: inline;
+          }
+        }
+        &:nth-child(2) {
+          p.question {
+            width: 192px;
+            right: unset;
+            left: 18px;
+          }
+          p.answer {
+            bottom: 20px;
+            right: 28px;
+            width: 175px;
+          }
+        }
+        &:last-child {
+          padding-right: 0;
+          p.question {
+            left: unset;
+            right: 35px;
+            top: 100px !important;
+          }
+          p.answer {
+            width: 183px;
+            bottom: 17px;
+            left: 24px;
+          }
+        }
+      }
+    }
+  }
+
+  // solution
+  .solution {
+    .solution-head {
+      // top: -25px;
+      &-inner {
+        padding: 21px 0 19px 0;
+        .title {
+          font-size: 28px;
+          letter-spacing: 3.08px;
+          span {
+            display: inline;
+          }
+        }
+        &::after {
+          // bottom: -20px;
+        }
+      }
+    }
+    .solution-content {
+      &-inner {
+        padding: 46px 40px;
+        flex-wrap: wrap;
+        gap: 20px;
+        .solution-item {
+          width: 100%;
+          .card {
+            margin-inline: 12px;
+            padding: 25px 19px 19px;
+            border-radius: 25px;
+            margin-bottom: 8px;
+            .wrap-img-desc {
+              margin-bottom: 3px;
+              img {
+                width: 135px;
+                height: auto;
+              }
+            }
+            .title {
+              font-size: 20px;
+              margin-bottom: 4px;
+            }
+            .icon-check {
+              width: 38.5px;
+            }
+          }
+          .desc {
+            padding: 0;
+            margin-inline: -18px;
+          }
+          &:nth-child(2) {
+            .card {
+              .wrap-img-desc {
+                margin-top: -14px;
+              }
+            }
+          }
+          &:last-child {
+            .desc p span {
+              display: block;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  // inheritance-diagram
+  .inheritance-diagram {
+    &-inner {
+      padding: 40px 0 36px;
+      h2 {
+        font-size: 28px;
+        font-weight: 700;
+        line-height: 1.4;
+        padding-bottom: 30px;
+        background: url("../image/icon/brackets.svg") no-repeat bottom left;
+        background-size: 100%;
+        margin-bottom: 15px;
+      }
+      .wrap-diagram {
+        img {
+          &:first-child {
+            display: none;
+          }
+          &:last-child {
+            display: block;
           }
         }
       }
