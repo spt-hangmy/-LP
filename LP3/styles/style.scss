@@ -197,6 +197,9 @@ body {
     background-size: contain;
     position: relative;
     z-index: 1;
+    .shake-hands {
+      display: none;
+    }
     .wrap-content {
       padding-top: 80px;
       padding-bottom: 150px;
@@ -204,6 +207,12 @@ body {
       .text-banner {
         width: 525px;
         height: 300px;
+        &:first-child {
+          display: inline-block;
+        }
+        &:last-child {
+          display: none;
+        }
       }
       .wrap-top {
         gap: 30px;
@@ -236,6 +245,14 @@ body {
       position: absolute;
       bottom: -55px;
       left: 0;
+      > div {
+        img:first-child {
+          display: block;
+        }
+        img:last-child {
+          display: none;
+        }
+      }
       // .wrap-ads {
       //   position: relative;
       //   &::before {
@@ -1055,6 +1072,110 @@ body {
               font-size: 18px;
               font-weight: 700;
             }
+          }
+        }
+      }
+    }
+  }
+}
+
+// responsive
+@media screen and (max-width: 640px) {
+  .container {
+    max-width: 375px;
+    width: 100%;
+    padding: 0 16px;
+    margin: 0 auto;
+  }
+  // introduce
+  .introduce {
+    &::before,
+    &::after {
+      width: 252px;
+      height: 222px;
+      background-size: cover;
+    }
+    .introduce-inner {
+      background: none;
+      .shake-hands {
+        display: block;
+        height: 187px;
+        width: auto;
+        margin: 0 auto;
+        margin-inline: -16px;
+        margin-bottom: 8px;
+      }
+      .wrap-content {
+        padding-top: 20px;
+        padding-bottom: 16px;
+        .wrap-top {
+          gap: 0;
+          display: block;
+          .wrap-img {
+            margin-bottom: 19px;
+          }
+        }
+        .text-banner {
+          &:last-child {
+            display: inline-block;
+            width: 358px;
+            height: 182px;
+            position: relative;
+            right: 8px;
+          }
+          &:first-child {
+            display: none;
+          }
+        }
+        .wrap-desc {
+          display: none;
+        }
+        .group-ads {
+          > div {
+            box-shadow: rgba(0, 0, 0, 0.3) 0px 5px 15px;
+            border-radius: 18px;
+            overflow: hidden;
+            img:first-child {
+              display: none;
+            }
+            img:last-child {
+              display: block;
+              width: 108px;
+            }
+          }
+        }
+      }
+      .group-ads {
+        position: unset;
+        padding: 0;
+        justify-content: space-between;
+      }
+    }
+  }
+
+  // benefit
+  .benefit {
+    &-inner {
+      padding-top: 41px;
+      .title-open {
+        font-size: 20px;
+        line-height: 1.5;
+        letter-spacing: 2px;
+        padding-bottom: 7px;
+        margin-bottom: 7px;
+        &::after {
+          width: 292px;
+        }
+      }
+      .container {
+        > p:nth-child(2) {
+          flex-wrap: wrap;
+          text-shadow: 2.046px 3.671px 5.14px rgba(0, 0, 0, 0.51);
+          font-size: 40px;
+          line-height: 1.25;
+          letter-spacing: 0;
+          span {
+            width: 100%;
           }
         }
       }
