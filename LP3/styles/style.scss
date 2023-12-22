@@ -1247,6 +1247,7 @@ body {
           }
           &:after {
             background: url("../image/icon/two-line-right.svg") no-repeat center;
+            background-size: contain;
             left: unset;
             right: -36px;
           }
@@ -1830,6 +1831,69 @@ body {
           &:last-child {
             display: block;
           }
+        }
+      }
+    }
+  }
+
+  // characteristic
+  .characteristic-inner {
+    padding: 40px 0 31px;
+    .group-img {
+      margin-bottom: 16px;
+      .wrap-block {
+        padding: 15px 5px;
+        .wrap-img {
+          margin-bottom: 12px;
+          img {
+            width: 90px;
+          }
+        }
+        p {
+          font-size: 12px;
+          line-height: 1.5;
+        }
+      }
+    }
+    .group-detail {
+      .detail {
+        padding: 16px;
+        .title {
+          font-size: 18px;
+          line-height: 1.56;
+        }
+      }
+    }
+  }
+
+  //
+  .price-package-inner {
+    padding: 41px 0 37px;
+    h2 {
+      font-size: 28px;
+      line-height: 1.4;
+      padding-bottom: 15px;
+      margin-bottom: 20px;
+    }
+    .wrap-plan {
+      .content {
+        p:first-child {
+          font-size: 24px;
+          line-height: 1.4;
+          padding-bottom: 9px;
+          &::before, &::after {
+            width: 20px;
+            height: 26px;
+            top: 5px;
+            left: -22px;
+          }
+          &::after {
+            right: -22px;
+            left: unset;
+          }
+        }
+        p:nth-child(2) {
+          margin-bottom: 7px;
         }
       }
     }

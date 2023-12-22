@@ -955,6 +955,7 @@ body {
             left: -36px; }
           .price-package-inner .wrap-plan .content p:first-child:after {
             background: url("../image/icon/two-line-right.svg") no-repeat center;
+            background-size: contain;
             left: unset;
             right: -36px; }
         .price-package-inner .wrap-plan .content p:nth-child(2) {
@@ -1358,6 +1359,47 @@ body {
     .inheritance-diagram-inner .wrap-diagram img:first-child {
       display: none; }
     .inheritance-diagram-inner .wrap-diagram img:last-child {
-      display: block; } }
+      display: block; }
+
+  .characteristic-inner {
+    padding: 40px 0 31px; }
+    .characteristic-inner .group-img {
+      margin-bottom: 16px; }
+      .characteristic-inner .group-img .wrap-block {
+        padding: 15px 5px; }
+        .characteristic-inner .group-img .wrap-block .wrap-img {
+          margin-bottom: 12px; }
+          .characteristic-inner .group-img .wrap-block .wrap-img img {
+            width: 90px; }
+        .characteristic-inner .group-img .wrap-block p {
+          font-size: 12px;
+          line-height: 1.5; }
+    .characteristic-inner .group-detail .detail {
+      padding: 16px; }
+      .characteristic-inner .group-detail .detail .title {
+        font-size: 18px;
+        line-height: 1.56; }
+
+  .price-package-inner {
+    padding: 41px 0 37px; }
+    .price-package-inner h2 {
+      font-size: 28px;
+      line-height: 1.4;
+      padding-bottom: 15px;
+      margin-bottom: 20px; }
+    .price-package-inner .wrap-plan .content p:first-child {
+      font-size: 24px;
+      line-height: 1.4;
+      padding-bottom: 9px; }
+      .price-package-inner .wrap-plan .content p:first-child::before, .price-package-inner .wrap-plan .content p:first-child::after {
+        width: 20px;
+        height: 26px;
+        top: 5px;
+        left: -22px; }
+      .price-package-inner .wrap-plan .content p:first-child::after {
+        right: -22px;
+        left: unset; }
+    .price-package-inner .wrap-plan .content p:nth-child(2) {
+      margin-bottom: 7px; } }
 
 /*# sourceMappingURL=style.css.map */
